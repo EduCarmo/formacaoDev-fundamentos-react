@@ -6,8 +6,9 @@ interface RodapeProps {
 export default function Rodape(props: RodapeProps) {
     return (
         <div className="
-            flex justify-between items-center rounded-lg h-16
-            bg-cyan-600 text-sm px-10
+            flex justify-between items-center h-16
+            text-base text-zinc-500 px-10 bg-zinc-900 
+            border-t border-zinc-800
         ">
             <span>{props.textoEsquerdo}</span>
             <span>{props.textoDireito}</span>
