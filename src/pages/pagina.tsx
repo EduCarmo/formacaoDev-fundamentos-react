@@ -10,7 +10,7 @@ export default function TestePagina() {
     return (
         <Pagina titulo="Minha Página" subTitulo="Estou na pasta pages">
             <button 
-            className="bg-blue-500 p-2 rounded-md"
+            className="botao"
             onClick={executar}
             >
                 Teste
