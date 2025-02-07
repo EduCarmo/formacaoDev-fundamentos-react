@@ -1,4 +1,4 @@
-import { IconBraces, IconBrandJavascript, IconCalculator, IconCode, IconFileCheck, IconForms, IconFunction, IconH1, IconSitemap } from "@tabler/icons-react";
+import { IconArrowDownSquare, IconArrowUpSquare, IconBraces, IconBrandJavascript, IconCalculator, IconCode, IconFileCheck, IconForms, IconFunction, IconH1, IconSitemap } from "@tabler/icons-react";
 import MenuItem from "./MenuItem";
 
 export default function Menu() {
@@ -8,13 +8,17 @@ export default function Menu() {
         text-3xl w-75 p-2 gap-2"
         >
 
+            <span className="text-sm text-zinc-500 self-start pl-3 pt-4">Comunicação</span>
+            <MenuItem icon={<IconArrowDownSquare />} texto="Comunicação Direta" url="/comunicacao/direta" />
+            <MenuItem icon={<IconArrowUpSquare />} texto="Comunicação indireta" url="/comunicacao/indireta" />
+
             <span className="text-sm text-zinc-500 self-start pl-3 pt-4">Estado</span>
             <MenuItem icon={<IconCode />} texto="Componentes sem Estado" url="/estado/sem" />
             <MenuItem icon={<IconCode />} texto="Componentes com Estado" url="/estado/com" />
             <MenuItem icon={<IconCode />} texto="Contador" url="/estado/contador" />
             <MenuItem icon={<IconForms />} texto="Campo de Texto" url="/estado/campoTexto" />
             <MenuItem icon={<IconCalculator />} texto="Calculadora" url="/estado/calculadora" />
-           
+
             <span className="text-sm text-zinc-500 self-start pl-3 pt-4">Fundamentos</span>
             <MenuItem icon={<IconBraces />} texto="JSX com JS" url="/fundamentos/soma" />
             <MenuItem icon={<IconFunction />} texto="JSX: Chamando Funções" url="/fundamentos/funcoes" />
